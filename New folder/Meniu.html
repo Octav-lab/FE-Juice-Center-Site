@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu & Produse - F.E. Juice Center SRL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f7f7; }
+        .nav-link:hover { background-color: rgba(255, 255, 255, 0.1); }
+        .product-card { transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navigare (Antet) -->
+    <header class="bg-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <h1 class="text-2xl font-bold text-white">F.E. Juice Center SRL</h1>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="nav-link text-white px-3 py-2 rounded-md text-sm font-medium">Acasă</a>
+                    <a href="meniu.html" class="nav-link text-white px-3 py-2 rounded-md text-sm font-medium bg-green-700">Meniu & Produse</a>
+                    <a href="despre.html" class="nav-link text-white px-3 py-2 rounded-md text-sm font-medium">Despre Noi</a>
+                    <a href="contact.html" class="nav-link text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conținut Principal -->
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">🍹 Meniu & Produse Proaspete</h2>
+            
+            <!-- Secțiunea Sucuri Fresh -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-semibold text-green-700 border-b-2 border-green-500 pb-2 mb-6">I. Sucuri Fresh (Stoarse pe Loc)</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Produs 1 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Orange Boost (250 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Portocală, Morcov, Ghimbir</p>
+                        <p class="text-lg font-semibold text-orange-600">12 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Beneficiu: Imunitate și Vitamina C</p>
+                    </div>
+                    <!-- Produs 2 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-green-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Green Detox (250 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Spanac, Măr Verde, Castravete, Lămâie</p>
+                        <p class="text-lg font-semibold text-orange-600">15 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Beneficiu: Curățare și Alcalinizare</p>
+                    </div>
+                    <!-- Produs 3 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-red-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Beet Energy (250 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Sfeclă Roșie, Măr, Țelină</p>
+                        <p class="text-lg font-semibold text-orange-600">14 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Beneficiu: Energie și Rezistență</p>
+                    </div>
+                    <!-- Produs 4 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-yellow-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Mărul Zilei (250 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">100% Măr de sezon</p>
+                        <p class="text-lg font-semibold text-orange-600">10 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Beneficiu: Sursă de Fibre</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secțiunea Smoothie-uri -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-semibold text-green-700 border-b-2 border-green-500 pb-2 mb-6">II. Smoothie-uri (Senzații Cremnoase)</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Produs 5 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-blue-400">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Tropical Sunrise (400 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Mango, Ananas, Banană, Lapte de Cocos</p>
+                        <p class="text-lg font-semibold text-orange-600">18 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Vegan, Fără Gluten</p>
+                    </div>
+                    <!-- Produs 6 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-pink-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Berry Blast (400 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Mix de Fructe de Pădure, Iaurt Natural, Miere</p>
+                        <p class="text-lg font-semibold text-orange-600">19 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Antioxidanți Puternici</p>
+                    </div>
+                    <!-- Produs 7 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-amber-800">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Choco-Banana Power (400 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Banană, Cacao, Unt de Arahide, Lapte de Migdale</p>
+                        <p class="text-lg font-semibold text-orange-600">20 RON</p>
+                        <p class="text-green-600 mt-2 font-medium">Ideal Post-Antrenament</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secțiunea Shots de Imunitate -->
+            <section class="mb-12">
+                <h3 class="text-3xl font-semibold text-green-700 border-b-2 border-green-500 pb-2 mb-6">III. Shots de Imunitate (Concentrate)</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                    <!-- Produs 8 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-yellow-600">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Shot de Ghimbir (50 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Ghimbir, Lămâie, Miere</p>
+                        <p class="text-lg font-semibold text-orange-600">8 RON</p>
+                    </div>
+                    <!-- Produs 9 -->
+                    <div class="product-card bg-white p-4 rounded-xl shadow-lg border-t-4 border-yellow-700">
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">Shot de Turmeric (50 ml)</h4>
+                        <p class="text-sm text-gray-500 mb-3">Turmeric, Portocală, Piper Negru</p>
+                        <p class="text-lg font-semibold text-orange-600">9 RON</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Subsol (Footer) -->
+    <footer class="bg-gray-800 text-white p-6 mt-10">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p class="mb-2 font-semibold text-yellow-400">
+                **Notă: F.E. Juice Center SRL este o Firmă de Exercițiu.**
+            </p>
+            <p>
+                Pentru informații sau comenzi: <a href="mailto:office@fejuicecenter.ro" class="text-green-400 hover:text-green-300">office@fejuicecenter.ro</a> | Telefon: 07XX XXX XXX (Fictiv)
+            </p>
+            <p class="mt-2">&copy; 2025 F.E. Juice Center SRL. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
